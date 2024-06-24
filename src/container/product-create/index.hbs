@@ -1,0 +1,51 @@
+<div>
+  <section>
+    <h1 class='title'>Створення товару</h1>
+    <div class='form'>
+      <h2 class='form_title'>Інформація про товар</h2>
+      <form method='POST' action='/product-create'>
+        <div class='form_content'>
+          <div class='form_product'>
+            <div class='form_field'>
+              <label for='name' class='form_label'>Назва
+                товару</label>
+              <input
+                type='text'
+                name='name'
+                class='form_input'
+              />
+            </div>
+            <div class='form_field'>
+              <label
+                for='price'
+                class='form_label'
+              >Ціна</label>
+              <input
+                type='number'
+                name='price'
+                class='form_input'
+              />
+
+            </div>
+          </div>
+          <div class='form_field'>
+            <label
+              for='description'
+              class='form_label'
+            >Короткий опис товару</label>
+            <input
+              type='text'
+              name='description'
+              class='form_input'
+            />
+            <div class='form_text'>Відображається у картці
+              товару</div>
+          </div>
+          <button class='form_button'><span
+              class='button_text'
+            >Створити товар</span></button>
+        </div>
+      </form>
+    </div>
+  </section>
+</div>

@@ -9,7 +9,7 @@ class Product {
   static #list = []
 
   constructor(name, price, description) {
-    this.id = math.floor(Math.random() * 90000) + 10000
+    this.id = Math.floor(Math.random() * 90000) + 10000
     this.createDate = new Date().toISOString()
     this.name = name
     this.price = price
@@ -59,7 +59,7 @@ router.get('/', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   // ↙️ cюди вводимо назву файлу з сontainer
-  res.render('index', {
+  res.render('product-create', {
     // вказуємо назву папки контейнера, в якій знаходяться наші стилі
     style: 'index',
   })
